@@ -1,0 +1,40 @@
+.about-container {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.info-image {
+  margin-left: 15%;
+  margin-top: 1rem;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 1px 1px 12px #c0da74;
+}
+
+.info-text {
+  flex-grow: 1;
+  margin-top: 2rem;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  max-width: 60%;
+}
+
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .info-text {
+    max-width: 80%;
+  }
+
+  .info-image {
+    width: 200px;
+  }
+}

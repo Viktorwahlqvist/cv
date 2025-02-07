@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-text {
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0.25rem;
+}
+textarea {
+  resize: none;
+}

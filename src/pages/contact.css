@@ -1,0 +1,41 @@
+.contact-container {
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+}
+.contact-info,
+.contact-form {
+  width: 50%;
+  margin: min(6rem, 8%);
+  padding: min(5rem, 8%);
+  max-width: 50%;
+  box-shadow: 1px 1px 12px #c0da74;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1620px) {
+  .contact-info,
+  .contact-form {
+    margin: 2rem;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    min-width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

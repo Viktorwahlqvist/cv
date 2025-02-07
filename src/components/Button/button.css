@@ -1,0 +1,20 @@
+.basic-button {
+  padding: 5% 20%;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+.basic-button:hover {
+  transform: scale(1.05);
+  background-color: #42434f;
+}
+.submit-btn {
+  margin-top: 1rem;
+  align-self: center;
+  background-color: #1e1f25;
+  box-shadow: 1px 1px 12px #c0da74;
+}
+.submit-btn:disabled {
+  background-color: #414247;
+}

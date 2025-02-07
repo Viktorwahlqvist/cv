@@ -1,0 +1,32 @@
+.skill-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-container {
+  width: 100%; /* Gör så att containern är 100% av bredden */
+  max-width: 600px; /* Sätter en maxbredd för större skärmar */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tre kolumner för större skärmar */
+  gap: 1rem;
+  margin: 0.25rem auto;
+}
+.h3-skills {
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px 12px #c0da74;
+}
+
+@media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    justify-items: center;
+
+    max-width: 100%;
+  }
+}

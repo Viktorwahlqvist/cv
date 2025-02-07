@@ -1,0 +1,24 @@
+.bi-envelope,
+.bi-github,
+.bi-linkedin {
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+.bi-github {
+  border-radius: 30px;
+}
+.bi-github:hover,
+.bi-linkedin:hover {
+  box-shadow: 1px 1px 12px #c0da74;
+}
+.contact-flex {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+}
+.contact-flex p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}

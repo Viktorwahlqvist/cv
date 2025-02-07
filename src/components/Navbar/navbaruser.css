@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredericka+the+Great&family=Jersey+15&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Patrick+Hand&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.github-container {
+  display: inline-flex;
+  gap: 2%;
+}
+
+.user-avatar {
+  margin: 0.5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+
+.user-info-container {
+  margin-left: 10px;
+}
+
+.user-login {
+  font-family: "Caveat", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  text-shadow: 1px 1px 1px gray;
+  text-decoration: underline 0.3px rgba(0, 0, 0, 0.459);
+}
+.followers {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+}

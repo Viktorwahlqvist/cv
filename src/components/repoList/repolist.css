@@ -1,0 +1,9 @@
+.loading-msg {
+  text-align: center;
+  font-size: 3rem;
+}
+.failed-msg {
+  text-align: center;
+  font-size: 3rem;
+  color: red;
+}

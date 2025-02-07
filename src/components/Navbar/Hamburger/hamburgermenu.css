@@ -1,0 +1,15 @@
+.mobile-nav {
+  background-color: #1c1e22;
+  z-index: -1;
+  padding-top: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
