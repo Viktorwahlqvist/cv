@@ -3,7 +3,7 @@ const Token = import.meta.env.VITE_API_KEY;
 const URLREPOS = "https://api.github.com/users/Viktorwahlqvist/repos";
 const URLREADME = "https://api.github.com/repos/Viktorwahlqvist";
 const GithubBase = "https://github.com/Viktorwahlqvist/";
-
+console.log("API Key:", Token);
 // Hämtar alla repon
 export const fetchRepos = createAsyncThunk("repos/fetchRepos", async () => {
   const response = await fetch(URLREPOS, {
@@ -11,6 +11,7 @@ export const fetchRepos = createAsyncThunk("repos/fetchRepos", async () => {
       Authorization: `token ${Token}`,
     },
   });
+
   if (!response.ok) {
     throw new Error("Couldn't fetch data...");
   }
