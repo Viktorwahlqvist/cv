@@ -1,3 +1,5 @@
+![image](https://github.com/Viktorwahlqvist/cv/blob/main/public/Sk%C3%A4rmbild%202025-02-12%20112453.png?raw=true)
+
 # Projektet "CV"
 
 Detta projekt är en personlig portfolio-webbplats där jag presenterar mina färdigheter, projekt och kontaktinformation. Sidan är byggd med moderna webbteknologier och erbjuder en enkel och responsiv användarupplevelse.
