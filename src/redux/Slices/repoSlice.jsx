@@ -42,6 +42,14 @@ const repoSlice = createSlice({
         och link för image i reame. */
       .addCase(fetchReadMe.fulfilled, (state, action) => {
         state.readmesStatus = "succeeded";
+
+        // Om readme inte innehåller en bild, är null återgå.
+        if (!action.payload || !action.payload.imageLinks) {
+          console.log("skippar");
+
+          return;
+        }
+
         /* action.payload.repo är namnet på repot för den specifika readme filen. */
         state.readmes[action.payload.repo] = {
           links: action.payload.imageLinks,

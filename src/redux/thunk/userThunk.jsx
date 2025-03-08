@@ -14,6 +14,5 @@ export const fetchUser = createAsyncThunk("user/fetchUser", async () => {
     throw new Error("Couldn't fetch user...");
   }
   const data = await response.json();
-  console.log(data);
   return data;
 });

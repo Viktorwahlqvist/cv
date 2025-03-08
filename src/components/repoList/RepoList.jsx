@@ -24,7 +24,7 @@ const RepoList = () => {
     if (reposStatus === "succeeded" && readmesStatus === "idle") {
       repos.forEach((repo) => {
         // om det inte finns någon readme för ett repo så körs den till alla har en readme med fetchRreadMe och repo namnet.
-        if (!readmes[repo.name]) {
+        if (!readmes[repo.name] || !readmes[repo.name.links]) {
           dispatch(fetchReadMe(repo.name));
         }
       });
@@ -41,8 +41,6 @@ const RepoList = () => {
   }
   // Skapar en array så at vi kan anända array metoder i listitem komponenten.
   const readmeArray = Object.entries(readmes);
-  console.log(readmes);
-  console.log(readmeArray);
 
   return <ListItem readmeArray={readmeArray} />;
 };

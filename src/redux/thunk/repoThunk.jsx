@@ -3,7 +3,6 @@ const Token = import.meta.env.VITE_API_KEY;
 const URLREPOS = "https://api.github.com/users/Viktorwahlqvist/repos";
 const URLREADME = "https://api.github.com/repos/Viktorwahlqvist";
 const GithubBase = "https://github.com/Viktorwahlqvist/";
-console.log("API Key:", Token);
 // Hämtar alla repon
 export const fetchRepos = createAsyncThunk("repos/fetchRepos", async () => {
   const response = await fetch(URLREPOS, {
@@ -31,6 +30,10 @@ export const fetchReadMe = createAsyncThunk(
       },
     });
     if (!response.ok) {
+      // Har ingen readmefil så skippas det.
+      if (response.status === 404) {
+        return null;
+      }
       throw new Error("Couldn't fetch readme...");
     }
     const data = await response.json();
